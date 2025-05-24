@@ -13,11 +13,19 @@ export default function RegisterUI() {
         <h2 className="heading">Register</h2>
 
         <input
-          id="username"
+          id="fullName"
           type="text"
           required
           className="inputField"
-          placeholder="Username or email address*"
+          placeholder="Full Name*"
+        />
+
+        <input
+          id="email"
+          type="email"
+          required
+          className="inputField"
+          placeholder="Email Address*"
         />
 
         <div className="passwordWrapper">
@@ -49,12 +57,28 @@ export default function RegisterUI() {
           <button
             onClick={() => setShowConfirmPassword(!showConfirmPassword)}
             className="passwordToggle"
-            aria-label="Toggle password visibility"
+            aria-label="Toggle confirm password visibility"
             type="button"
           >
             {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
           </button>
         </div>
+
+        <input
+          id="address"
+          type="text"
+          required
+          className="inputField"
+          placeholder="Address*"
+        />
+
+        <input
+          id="phone"
+          type="number"
+          required
+          className="inputField"
+          placeholder="Phone Number*"
+        />
 
         <label className="rememberLabel" style={{ marginBottom: "1rem" }}>
           <input
@@ -80,13 +104,13 @@ export default function RegisterUI() {
       </div>
 
       <div className="rightSide">
-        <h2 className="heading">Already have an account?</h2>
+        <h2 className="heading1">Already have an account?</h2>
         <p className="rightText">
-          Welcome back. Sign in to access your personalized experience, saved
-          preferences, and more. We're thrilled to have you with us again!
-        </p>
-         <a href="/login" className="loginButton1">Login</a>
+         Welcome back. Sign in to access your personalized experience, saved preferences, and more. We're thrilled to have you with us again!
 
+
+        </p>
+        <a href="/login" className="loginButton1">Login</a>
       </div>
     </div>
   );

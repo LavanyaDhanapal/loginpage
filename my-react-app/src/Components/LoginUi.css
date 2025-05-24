@@ -157,10 +157,12 @@ text-decoration: none;
 /* Text on right side */
 .rightText {
   color: #555;
-  line-height: 1.5;
   font-size: 1rem;
-  margin: 0; /* reset margin for consistent gap */
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify; /* Ensures equal spacing between words */
 }
+
 
 /* Register button */
 .registerButton {

@@ -12,10 +12,10 @@ export default function LoginUI() {
 
         <input
           id="username"
-          type="text"
+          type="Number"
           required
           className="inputField"
-          placeholder="Username or email address*"
+          placeholder="Phone Number*"
         />
 
         <div className="passwordWrapper">
@@ -54,9 +54,7 @@ export default function LoginUI() {
       <div className="rightSide">
         <h2 className="heading">New Customer</h2>
         <p className="rightText">
-          Be part of our growing family of new customers! Join us today and
-          unlock a world of exclusive benefits, offers, and personalized
-          experiences.
+          Be part of our growing family of new customers join us today and unlock a world of exclusive benefits, offers, and personalized experiences.
         </p>
         <a href="/Register" className="registerButton">Register</a>
 
