@@ -10,14 +10,18 @@ export default function LoginUI() {
       <div className="leftSide">
         <h2 className="heading">Login</h2>
 
+        <label htmlFor="username" className="inputLabel">Phone Number</label>
         <input
           id="username"
-          type="Number"
+          type="number"
           required
           className="inputField"
           placeholder="Phone Number*"
+          pattern="[0-9]{10}"
+          maxLength={10}
         />
 
+        <label htmlFor="password" className="inputLabel">Password</label>
         <div className="passwordWrapper">
           <input
             id="password"
@@ -48,20 +52,15 @@ export default function LoginUI() {
         </div>
 
         <a href="/login" className="loginButton">Login</a>
-
       </div>
 
       <div className="rightSide">
         <h2 className="heading">New Customer</h2>
-        <p className="rightText">
+        <p className="rightText1">
           Be part of our growing family of new customers join us today and unlock a world of exclusive benefits, offers, and personalized experiences.
         </p>
         <a href="/Register" className="registerButton">Register</a>
-
-        
       </div>
-      
     </div>
-    
   );
 }

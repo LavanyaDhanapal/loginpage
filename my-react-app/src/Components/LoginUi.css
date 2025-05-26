@@ -52,11 +52,17 @@
 
 
 /* Labels */
-.label {
+/* .label {
   font-weight: 700;
   margin-bottom: 0.25rem;
   color: #555;
+} */
+.inputLabel{
+  margin-bottom: 1px;
+  font-weight: 500;
+
 }
+
 
 /* Inputs */
 .inputField {
@@ -65,6 +71,8 @@
   border: 1px solid #ccc;
   font-size: 1rem;
   width: 100%;
+  position: relative;
+  bottom: 10px;
   /* box-sizing: border-box; */
 }
 
@@ -156,12 +164,15 @@ text-decoration: none;
 }
 
 /* Text on right side */
-.rightText {
+.rightText1 {
   color: #555;
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
-  text-align: justify; /* Ensures equal spacing between words */
+  text-align: justify;
+  position: relative;
+  bottom: 20px;
+  font-weight: 600; /* Ensures equal spacing between words */
 }
 
 

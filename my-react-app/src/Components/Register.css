@@ -39,7 +39,8 @@
 }
 
 .heading1 {
-  margin-right: 140px;
+  position: relative;
+  bottom: 220px;
 }
 
 /* Input fields */
@@ -93,7 +94,8 @@
 .rightText {
   color: #555;
   font-size: 1.2rem;
-  margin: 0;
+  position: relative;
+  bottom: 220px;
 }
 
 /* Register button */
@@ -108,6 +110,7 @@
   cursor: pointer;
   align-self: center;
   transition: background-color 0.2s ease;
+  
 }
 
 .loginButton:hover {
@@ -130,9 +133,13 @@
   margin-left: 190px;
   text-decoration: none;
   text-align: center;
+  position: relative;
+  bottom: 220px;
 }
 
 .loginButton1:hover {
   background-color: #45c163;
   text-decoration: none;
+  position: relative;
+  bottom: 220px;
 }
